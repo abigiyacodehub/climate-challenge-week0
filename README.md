@@ -94,6 +94,15 @@ git add .
 git commit -m "feat: add Ethiopia climate EDA notebook"
 ```
 
+Task branch convention:
+
+- `setup-task` for repository setup and CI configuration
+- `eda-<country>` for country-level profiling, cleaning, and EDA
+- `compare-countries` for cross-country comparison and vulnerability ranking
+- `dashboard-dev` for dashboard development when the dashboard task begins
+
+Open a pull request from each task branch into `main`, wait for CI to pass, then merge through GitHub so branch history and review evidence remain visible.
+
 ## Continuous Integration
 
-GitHub Actions installs `requirements.txt`, verifies core scientific Python imports, and validates notebook JSON files on pushes to `main` and `eda-*` branches.
+GitHub Actions installs `requirements.txt`, verifies core scientific Python imports, and validates notebook JSON files on pushes to `main`, `eda-*`, and comparison branches.

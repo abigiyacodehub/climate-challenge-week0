@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [main, "eda-*"]
+    branches: [main, "eda-*", compare-countries, dashboard-dev]
   pull_request:
     branches: [main]
 
