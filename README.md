@@ -73,6 +73,17 @@ jupyter notebook notebooks/ethiopia_eda.ipynb
 
 Run all notebook cells from top to bottom. The notebook downloads NASA POWER data, profiles data quality, cleans daily climate features, exports a cleaned CSV to `data/processed/ethiopia_daily_cleaned.csv`, and produces analytical visualizations with written interpretations.
 
+### Run the Cross-Country Comparison Notebook
+
+Task 3 work is on the `compare-countries` branch:
+
+```bash
+git switch compare-countries
+jupyter notebook notebooks/compare_countries.ipynb
+```
+
+Run all notebook cells from top to bottom. The notebook creates or loads cleaned local datasets for Ethiopia, Kenya, Nigeria, Egypt, and South Africa; combines them into one analysis dataset; compares temperature and precipitation patterns; analyzes extreme heat and drought frequency; and builds a relative climate vulnerability ranking framed for COP32 adaptation discussion.
+
 ## Git Workflow
 
 This project uses feature branches and conventional commits. Example:
