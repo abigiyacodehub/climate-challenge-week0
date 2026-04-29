@@ -69,8 +69,8 @@
   - Ethiopia
   - Kenya
   - Nigeria
-  - Egypt
-  - South Africa
+  - Sudan
+  - Tanzania
 - Implemented code to create or load all five countries' cleaned local datasets.
 - Combined all five country datasets into a single dataframe for joint analysis.
 - Added temperature comparison:
@@ -98,6 +98,18 @@
   - expected-column validation
   - empty raw and cleaned dataset checks
   - documented vulnerability-index limitations in markdown
+
+### Medium-Style COP32 PDF Report
+
+- Added `reports/COP32_CLIMATE_EVIDENCE_REPORT.pdf`.
+- The PDF report is written for mixed technical and non-technical readers.
+- It explains the business objective: EthioClimate Analytics supporting the Ethiopian Ministry of Planning and Development as Ethiopia prepares to host COP32 in Addis Ababa in 2027.
+- It frames NASA POWER daily climate evidence from January 2015 through March 2026 for Ethiopia, Kenya, Sudan, Tanzania, and Nigeria.
+- It applies the negotiation-grade evidence framework:
+  - What is changing?
+  - What did it cause?
+  - What does it demand?
+- It includes properly captioned visualizations, vulnerability ranking, COP32 recommendations, limitations, and future work.
 
 ## Git and GitHub Evidence
 
@@ -187,6 +199,7 @@ data/processed/.gitkeep
 notebooks/ethiopia_eda.ipynb
 notebooks/compare_countries.ipynb
 reports/FINAL_REPORT.md
+reports/COP32_CLIMATE_EVIDENCE_REPORT.pdf
 reports/figures/.gitkeep
 src/.gitkeep
 tests/.gitkeep

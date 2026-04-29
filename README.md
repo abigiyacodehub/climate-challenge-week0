@@ -82,7 +82,7 @@ git switch compare-countries
 jupyter notebook notebooks/compare_countries.ipynb
 ```
 
-Run all notebook cells from top to bottom. The notebook creates or loads cleaned local datasets for Ethiopia, Kenya, Nigeria, Egypt, and South Africa; combines them into one analysis dataset; compares temperature and precipitation patterns; analyzes extreme heat and drought frequency; and builds a relative climate vulnerability ranking framed for COP32 adaptation discussion.
+Run all notebook cells from top to bottom. The notebook creates or loads cleaned local datasets for Ethiopia, Kenya, Sudan, Tanzania, and Nigeria; combines them into one analysis dataset; compares temperature and precipitation patterns; analyzes extreme heat and drought frequency; and builds a relative climate vulnerability ranking framed for COP32 adaptation discussion.
 
 ## Git Workflow
 
