@@ -1,8 +1,8 @@
-name: Python Environment Setup
+name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [main, "eda-*"]
   pull_request:
     branches: [main]
 
@@ -10,7 +10,7 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
-  build:
+  python-checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -26,5 +26,26 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Verify Environment
-        run: python --version
+      - name: Verify imports
+        run: |
+          python - <<'PY'
+          import matplotlib
+          import nbformat
+          import numpy
+          import pandas
+          import requests
+          import scipy
+          import seaborn
+          print("Python environment ready")
+          PY
+
+      - name: Validate notebooks
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import nbformat
+
+          for notebook in Path("notebooks").glob("*.ipynb"):
+              nbformat.read(notebook, as_version=4)
+              print(f"Validated {notebook}")
+          PY

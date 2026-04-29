@@ -1,4 +1,28 @@
-data/
-*.csv
-.ipynb_checkpoints/
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
 .venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter_runtime/
+
+# Local data and generated outputs
+data/**
+!data/
+!data/**/
+!data/**/.gitkeep
+*.csv
+*.parquet
+*.xlsx
+reports/figures/**
+!reports/figures/
+!reports/figures/.gitkeep
+
+# Environment files
+.env

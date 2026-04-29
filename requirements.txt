@@ -4,3 +4,7 @@ numpy
 matplotlib
 seaborn
 scipy
+notebook
+ipykernel
+nbformat
+nbclient
